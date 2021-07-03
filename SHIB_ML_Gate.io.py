@@ -1,22 +1,18 @@
+import time
+import numpy as np
+import gate_api
+from gate_api.exceptions import ApiException, GateApiException
+from tkinter import Tk
+from tkinter.filedialog import askopenfilename
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import SGDRegressor
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.ensemble import GradientBoostingRegressor
-from sklearn import linear_model
-from sklearn import preprocessing
-import numpy as np
-import time
 from sklearn.preprocessing import StandardScaler
-import gate_api
-from gate_api.exceptions import ApiException, GateApiException
-from tkinter import Tk
-from tkinter.filedialog import askopenfilename
 
-configuration = gate_api.Configuration(
-    host = "https://api.gateio.ws/api/v4"
-)
-
+#Set the API configuration for pulling data
+configuration = gate_api.Configuration(host = "https://api.gateio.ws/api/v4")
 api_client = gate_api.ApiClient(configuration)
 api_instance = gate_api.SpotApi(api_client)
 
@@ -169,6 +165,7 @@ def trainTestSplit(cryptoTrain_X,cryptoTrain_Y):
         print('Loop number: ' + str(count))
         dn = dataNow()
         dnsc = scaler.transform(dn)
+        #Get the predictions for the price, if you want to view any of these simply print the following lines
         LRpred = linRegPred(dnsc,lR)
         RFpred = randomForestPred(dnsc, rF)
         SGDpred = sgdPred(dnsc,SGD)

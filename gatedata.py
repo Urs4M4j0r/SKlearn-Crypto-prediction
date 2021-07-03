@@ -1,18 +1,14 @@
-from __future__ import print_function
-import gate_api
-from gate_api.exceptions import ApiException, GateApiException
 import time
 import csv
+import gate_api
+from gate_api.exceptions import ApiException, GateApiException
 
-
-configuration = gate_api.Configuration(
-    host = "https://api.gateio.ws/api/v4"
-)
-
+#Set the API configuration for pulling data
+configuration = gate_api.Configuration(host = "https://api.gateio.ws/api/v4")
 api_client = gate_api.ApiClient(configuration)
 api_instance = gate_api.SpotApi(api_client)
 
-
+#Get data for the currency pair
 def getTicker(currencyPair):
     try:
         api_response = api_instance.list_tickers(currency_pair=currencyPair)
@@ -23,6 +19,7 @@ def getTicker(currencyPair):
     except ApiException as e:
         print("Exception when calling SpotApi->list_tickers: %s\n" % e)
 
+#Get values
 def getTickerValue(tick, value):
     switcher = {
         "base_volume": str(tick[0]).split(": ")[1],
@@ -37,12 +34,13 @@ def getTickerValue(tick, value):
         }
     return switcher.get(value, "Invalid ticker info requested.")
 
-
+#Write the collected data to output.csv
 def writedata(datalist):
     with open('output.csv', 'a', newline='', encoding='utf-8') as fp:
         wr = csv.writer(fp)
         wr.writerow(datalist)
-    
+
+#Collect all the data and add it to array dataList, then send dataList to writedata() to create/add to the output file  
 def getdata():
     dataList = []
 
@@ -87,4 +85,5 @@ def getdata():
 
 while True:
     getdata()
+    #Set this to change the interval you are collecting data at
     time.sleep(30)
