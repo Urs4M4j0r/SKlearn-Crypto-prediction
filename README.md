@@ -7,12 +7,12 @@ There are three main files included as part of this repository, output.csv, gate
 output.csv - The file which is output by gatedata.py containing various values for Bitcoin (BTC), Ethereum (ETH), and Shib (SHIB). These data are used by SHIB-ML-Gate.io.py for ML model training.
 
 gatedata.py - This Python script gathers data using the Gate.io API and writes it to output.csv every 30 seconds. This script was kept seperate from SHIB-ML-Gate.io.py as I found it beneficial to
-leave it running on a raspberry pi (or similar) to collect a large amount of data over several days/weeks. For a complete list of what data is collected see data section below.-------------------
+leave it running on a raspberry pi (or similar) to collect a large amount of data over several days/weeks. For a complete list of what data is collected see [Data])https://github.com/ehoop10/SKlearn-Crypto-prediction/blob/main/README.md#data)
 
 SHIB-ML-Gate.io.py - This is the main code for the project, it takes in a csv file of a format like output.csv and trains 4 machine learning models using seperate algorithms. Live price data is then
 pulled using the Gate.io API and prediction are made for 30 seconds in the future. Once 30 seconds have passed from the time of prediction the actual price at that time is compared to the prediction
 and the error for each model is printed as a percentage along with the average error of all 4 models and the percent change in price over the 30 seconds time period. For additional information about
-the models used see models below.-----------------------------
+the models used see [models]
 
 
 ## Data
