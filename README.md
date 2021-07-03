@@ -34,3 +34,4 @@ For each of the three cryptocurrencies used the following data is collected
 
 ## Requirements
 This script was written using Python v3.9.5 as well as gate_api, numpy, and sklearn which all may be install via PIP or by using the included requirements.txt (pip install -r requirements.txt)
+You **DO NOT** need to have a current/valid Gate.io account to use this script as the API functions called do not require API keys to work.
