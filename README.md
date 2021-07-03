@@ -14,6 +14,11 @@ pulled using the Gate.io API and prediction are made for 30 seconds in the futur
 and the error for each model is printed as a percentage along with the average error of all 4 models and the percent change in price over the 30 seconds time period. For additional information about
 the models used see [Models](https://github.com/ehoop10/SKlearn-Crypto-prediction/blob/main/README.md#models-details-taken-from-scikit-learnorg)
 
+## How can I use it?
+To use this project download/clone the repository and install needed dependencies. If you wish to collect your own data you may modify and use `gatedata.py`. Otherwise, this project comes with a sample file `output.csv` containing 14220 entries collected from June 27, 2021 23:02:21 GMT to July 03, 2021 03:11:18 GMT. These data were collected in 30 second intervals and shifted such that the last column displays the last price of SHIB 30 seconds in the future from the rest of that respective row. Note that if you decide to collect your own data you will need to perform this shift on the final column up to match with the time interval you are trying to model for.
+
+Once you have your data collected and formatted you may execute `SHIB-ML-Gate.io.py` which allows you to select the input csv file. Once selected the script will ask for the number of prediction loops you would like to execute. A prediction loop is one iteration of the prediction cycle in which the script uses the trained model to predict the future price, waits for the timespan which it predicted for, pulls the actual price, compares this price to the predictions, and prints percent inaccuracy values for each of the 4 models. Additionally, a total average is kept such that if the predicition loop is run 10 times the average inaccuracies over the course of all 10 loops for each model are calculated and printed. This total average will print every ten loops if the number of loops selected is greater than 10.
+
 
 ## Data
 For each of the three cryptocurrencies used the following data is collected
