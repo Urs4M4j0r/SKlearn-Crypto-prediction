@@ -46,9 +46,10 @@ There isn't really a satisfying answer for this. I wanted to use a currency whic
 I wanted to be able to gather a fair bit of data without having to leave it running for a long time. Additionally, with the data at 30 second intervals it is easy to shift the last column and change the `time.sleep(30)` line in `SHIB-ML-Gate.io.py` to make the timescale longer while retaining a majority of the previously collected data. See [How can I use it?](https://github.com/ehoop10/SKlearn-Crypto-prediction/blob/main/README.md#how-can-i-use-it) for a little for information on this.
 
 
-## Requirements
+
+# Requirements
 This script was written using Python v3.9.5 as well as gate_api, numpy, and sklearn which all may be install via PIP or by using the included requirements.txt (pip install -r requirements.txt)
 You **DO NOT** need to have a current/valid Gate.io account to use this script as the API functions called do not require API keys to work.
 
-## Disclaimer
+# Disclaimer
 The information provided by/with this project is for educational, informational, and entertainment purposes only and is not intended to be financial advice. You should not make any decision on investing/trading or otherwase based on the information provided by this project and understand that you are using any and all information available through this project as your own risk.
