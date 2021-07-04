@@ -39,10 +39,10 @@ For each of the three cryptocurrencies used the following data is collected
 
 
 # FAQ
-## Why SHIB?
+### Why SHIB?
 There isn't really a satisfying answer for this. I wanted to use a currency which had a relatively high volume/active trading but, a fair bit of volatility, and was inexpensive. Do not take this project as an endorsement or support of the SHIB cryptocurrency as I do not feel strongly about it one way or another.
 
-## Why 30 second intervals?
+### Why 30 second intervals?
 I wanted to be able to gather a fair bit of data without having to leave it running for a long time. Additionally, with the data at 30 second intervals it is easy to shift the last column and change the `time.sleep(30)` line in `SHIB-ML-Gate.io.py` to make the timescale longer while retaining a majority of the previously collected data. See [How can I use it?](https://github.com/ehoop10/SKlearn-Crypto-prediction/blob/main/README.md#how-can-i-use-it) for a little for information on this.
 
 
