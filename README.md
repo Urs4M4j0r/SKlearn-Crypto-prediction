@@ -19,6 +19,8 @@ To use this project download/clone the repository and install needed dependencie
 
 Once you have your data collected and formatted you may execute `SHIB-ML-Gate.io.py` which allows you to select the input csv file. Once selected the script will ask for the number of prediction loops you would like to execute. A prediction loop is one iteration of the prediction cycle in which the script uses the trained model to predict the future price, waits for the timespan which it predicted for, pulls the actual price, compares this price to the predictions, and prints percent inaccuracy values for each of the 4 models. Additionally, a total average is kept such that if the predicition loop is run 10 times the average inaccuracies over the course of all 10 loops for each model are calculated and printed. This total average will print every ten loops if the number of loops selected is greater than 10.
 
+## Why SHIB?
+There isn't really a satisfying answer for this. I wanted to use a currency which had a relatively high volume/active trading but, a fair bit of volatility, and was inexpensive. Do not take this project as an endorsement or support of the SHIB cryptocurrency as I do not feel strongly about it one way or another.
 
 ## Data
 For each of the three cryptocurrencies used the following data is collected
