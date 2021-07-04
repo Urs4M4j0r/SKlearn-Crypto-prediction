@@ -2,7 +2,7 @@
 This project is something I created trying to learn/experiment with machine learning (ML) using scikit-learn. I decided to combine my interest in cryptocurrencies in order to make something I found neat and educational.
 
 # What does it do?
-There are three main files included as part of this repository, output.csv, gatedata.py, and SHIB_ML_Gate.io.py.
+There are three main files included as part of this repository, `output.csv`, `gatedata.py`, and `SHIB_ML_Gate.io.py`.
 
 `output.csv` - The file which is output by gatedata.py containing various values for Bitcoin (BTC), Ethereum (ETH), and Shib (SHIB). These data are used by SHIB-ML-Gate.io.py for ML model training.
 
