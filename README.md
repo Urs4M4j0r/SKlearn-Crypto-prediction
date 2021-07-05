@@ -55,7 +55,7 @@ You **DO NOT** need to have a current/valid Gate.io account to use this script a
 The information provided by/with this project is for educational, informational, and entertainment purposes only and is not intended to be financial advice. You should not make any decision on investing/trading or otherwise based on the information provided by this project and understand that you are using any and all information available through this project as your own risk.
 
 # Donations
-BTC - bc1q8wdfa8xvqhgdyudy9hdaqzelps2rarl9vzas4m
-ETH - 0x77f533a7D98B6888f90543959fB5b8Ea3539eE0c
-LTC - LSfCvorJ4FUUKZiKnw1f2xaH2akdUm44AS 
+BTC - bc1q8wdfa8xvqhgdyudy9hdaqzelps2rarl9vzas4m <br/>
+ETH - 0x77f533a7D98B6888f90543959fB5b8Ea3539eE0c <br/>
+LTC - LSfCvorJ4FUUKZiKnw1f2xaH2akdUm44AS  <br/>
 SHIB (I felt obligated to include this)- 0x8126B2E305f46C202cFecD04b673A960142AC26B
