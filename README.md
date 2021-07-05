@@ -58,4 +58,4 @@ The information provided by/with this project is for educational, informational,
 BTC - bc1q8wdfa8xvqhgdyudy9hdaqzelps2rarl9vzas4m <br/>
 ETH - 0x77f533a7D98B6888f90543959fB5b8Ea3539eE0c <br/>
 LTC - LSfCvorJ4FUUKZiKnw1f2xaH2akdUm44AS  <br/>
-SHIB (I felt obligated to include this)- 0x8126B2E305f46C202cFecD04b673A960142AC26B
+SHIB (of course)- 0x8126B2E305f46C202cFecD04b673A960142AC26B
