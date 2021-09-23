@@ -1,5 +1,5 @@
 # What is this?
-This project is something I created trying to learn/experiment with machine learning (ML) using scikit-learn. I decided to combine my interest in cryptocurrencies in order to make something I found neat and educational.
+This project is something I created trying to learn/experiment with machine learning (ML) using scikit-learn. I decided to combine my interest in cryptocurrencies in order to make something I found neat and educational. Please note that this is not intended to be something that's actually implemented anywhere as the model is not saved after fitting so must be refit each run. I have uploaded it incase someone in the future finds some educational value in it for their path.
 
 # What does it do?
 There are three main files included as part of this repository, `output.csv`, `gatedata.py`, and `SHIB_ML_Gate.io.py`.
