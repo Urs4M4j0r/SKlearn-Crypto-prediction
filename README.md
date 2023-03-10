@@ -1,3 +1,10 @@
+# ATTENTION - Read first!
+Unfortunately, Gate.io has made the decision to make their platform unavailable in the US and others. As such, this is no longer working for anyone in the countries they list as prohibited. I am currently working on a newer version using a different exchange.
+
+See below for their statement:
+
+"Citizens and residents of the U.S.A, Canada (Ontario and Quebec), Malaysia, Singapore and Malta are prohibited entirely, Japan and Brazil are only allowed to trade whitelisted cryptocurrencies which are strictly selected based on the local lawyer’s options and regulations in the locations respectively."
+
 # What is this?
 This project is something I created trying to learn/experiment with machine learning (ML) using scikit-learn. I decided to combine my interest in cryptocurrencies in order to make something I found neat and educational. Please note that this is not intended to be something that's actually implemented anywhere as the model is not saved after fitting so must be refit each run. I have uploaded it incase someone in the future finds some educational value in it for their path.
 
