@@ -1,5 +1,5 @@
 # ATTENTION - Read first!
-Unfortunately, Gate.io has made the decision to make their platform unavailable in the US and others. As such, this is no longer working for anyone in the countries they list as prohibited. I am currently working on a newer version using a different exchange.
+Unfortunately, Gate.io has made the decision to make their platform unavailable in the US and others. As such, this is no longer working for anyone in the countries they list as prohibited.
 
 See below for their statement:
 
